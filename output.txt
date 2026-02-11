@@ -1,2 +1,1 @@
-Repeating: 2
-Missing: 5
+3
