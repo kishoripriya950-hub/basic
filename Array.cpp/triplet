@@ -17,7 +17,12 @@ vector<vector<int>> triplet(int n, vector<int> &num)
                 k--;
             }
             else {
-                ghgdytdfuyfydhhugiyg
+                vector<int> temp = {num[i], num[j], num[k]};
+                ans.push_back(temp);
+                j++;
+                k--;
+                while(j<k && num[j] == num[j-1]) j++;
+                while(j<k && num[k] == num[k+1]) k--;
             }
         }
     }
