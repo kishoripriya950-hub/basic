@@ -13,8 +13,7 @@ vector<vector<int>> triplet(int n, vector<int> &num)
             if(sum < 0) {
                 j++;
             }
-            else if(sum > 0) {
-                k--;
+            c
             }
             else {
                 vector<int> temp = {num[i], num[j], num[k]};
