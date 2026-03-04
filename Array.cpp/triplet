@@ -21,7 +21,8 @@ vector<vector<int>> triplet(int n, vector<int> &num)
                 ans.push_back(temp);
                 j++;
                 k--;
-               c
+                while(j<k && num[j] == num[j-1]) j++;
+                while(j<k && num[k] == num[k+1]) k--;
             }
         }
     }
