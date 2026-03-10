@@ -24,7 +24,7 @@ vector<int> generateRow(int row) {
 vector<vector<int>> pascalTriangle(int N) {
     vector<vector<int>> ans;
     for(int i=1; i<=N; i++) {
-       c
+       ans.push_back(generateRow(i));
     }
     return ans;
 }
@@ -40,4 +40,3 @@ int main() {
     }
     return 0;
 }
- ans.push_back(generateRow(i));
