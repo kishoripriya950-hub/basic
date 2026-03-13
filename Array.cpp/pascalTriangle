@@ -34,11 +34,9 @@ int main() {
     vector<vector<int>> result = pascalTriangle(N);
     for(auto row : result) {
        for(int val : row) {
-        c
+        cout << val << " ";
        }
        cout << endl;
     }
     return 0;
 }
-
-cout << val << " ";
