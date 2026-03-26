@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+long long func(int mid, int n) {
+    long long ans = 1;
+    for(int i=0; i<n; i++) {
+        ans *= mid;
+    }
+    return ans;
+}
+int NthRoot(int n, int m) {
+    int low = 1, high = m;
+    while(low <= high) {
+        int mid = (low + high) / 2;
+        int midN = func(mid, n);
+        if(midN == m) {
+            return mid;
+        }
+        else if(midN < m) low = mid + 1;
+        else high = mid -1 ;
+    }
+    return -1;
+}
+int main() {
+    int n, m;
+    cin >> n >> m;
+    int result =NthRoot(n, m);
+    cout << result << endl;
+    return 0;
+}
