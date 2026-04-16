@@ -32,7 +32,10 @@ int median(vector<vector<int>> &matrix, int m, int n) {
     }
     int req = (n*m) / 2;
     while(low <= high) {
-        c
+        int mid = (low + high) / 2;
+        int smallEqual = countSmallEqual(matrix, n, m, mid);
+        if(smallEqual <= req) low = mid + 1;
+        else high = mid - 1;
     }
     return low;
 }
